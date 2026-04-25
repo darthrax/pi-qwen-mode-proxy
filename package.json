@@ -1,0 +1,28 @@
+{
+  "name": "pi-qwen-mode-proxy",
+  "version": "1.0.0",
+  "description": "Sampling mode proxy for Qwen models served via llama.cpp — switch between thinking, coding, and instruct modes",
+  "license": "MIT",
+  "homepage": "https://github.com/guwidoe/pi-qwen-mode-proxy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guwidoe/pi-qwen-mode-proxy.git"
+  },
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "qwen",
+    "llama.cpp",
+    "llamacpp"
+  ],
+  "main": "extensions/index.ts",
+  "type": "module",
+  "peerDependencies": {
+    "@mariozechner/pi-coding-agent": "*"
+  },
+  "pi": {
+    "extensions": [
+      "./extensions"
+    ]
+  }
+}
